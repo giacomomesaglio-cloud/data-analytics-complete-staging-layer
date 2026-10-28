@@ -1,0 +1,19 @@
+sources:
+  - name: jaffle_shop
+    description: "Jaffle Shop coffee shop raw data"
+    schema: raw
+    meta:
+      owner: "Data Team"
+
+    tables:
+      - name: customers
+        identifier: raw_customers
+        description: "Customer information"
+
+      - name: orders
+        identifier: raw_orders
+        description: "Order transactions"
+
+      - name: payments
+        identifier: raw_payements
+        description: "Payment records"

@@ -1,0 +1,16 @@
+[0m22:26:01.466375 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eea489f5040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eea4a207440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eea49b25d00>]}
+
+
+============================== 22:26:01.474008 | 7b048e55-b976-4ea8-a7ce-d740cdb6e4e9 ==============================
+[0m22:26:01.474008 [info ] [MainThread]: Running with dbt=1.12.6
+[0m22:26:01.475052 [debug] [MainThread]: running dbt with arguments {'fail_fast': 'False', 'log_path': 'logs', 'log_cache_events': 'False', 'no_print': 'None', 'use_experimental_parser': 'False', 'warn_error': 'None', 'static_parser': 'True', 'empty': 'False', 'indirect_selection': 'eager', 'partial_parse': 'True', 'use_colors': 'True', 'profiles_dir': '/home/lewagon/.dbt', 'version_check': 'True', 'send_anonymous_usage_stats': 'True', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'write_json': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt run --select stg_orders', 'debug': 'False', 'cache_selected_only': 'False', 'introspect': 'True', 'printer_width': '80', 'hints_enabled': 'True', 'log_format': 'default', 'quiet': 'False'}
+[0m22:26:01.476097 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/lewagon/code/lewagon/data_analytics/03-Data-Transformation/09-Data-Layers-And-Intro-DBT/data-analytics-complete-staging-layer/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m22:26:01.477630 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.2398659, "process_in_blocks": "0", "process_kernel_time": 0.730248, "process_mem_max_rss": "111208", "process_out_blocks": "0", "process_user_time": 3.526172}
+[0m22:26:01.478779 [debug] [MainThread]: Command `dbt run` failed at 22:26:01.478541 after 0.24 seconds
+[0m22:26:01.479579 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eea4a207440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eea48a12540>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eea4883a6f0>]}
+[0m22:26:01.480493 [debug] [MainThread]: Flushing usage events
+[0m22:26:01.941515 [debug] [MainThread]: An error was encountered while trying to flush usage events
